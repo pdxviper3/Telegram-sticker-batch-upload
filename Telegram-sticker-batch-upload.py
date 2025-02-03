@@ -15,7 +15,7 @@ async def add_to_existing_sticker_set(api_id, api_hash, sticker_folder):
         await asyncio.sleep(2)
         
         # 发送现有贴纸包的短名称
-        await client.send_message(stickers_bot, 'xqhxm_1')
+        await client.send_message(stickers_bot, 'xxx') #输入现有的贴纸包
         await asyncio.sleep(2)
         
         # 上传每个贴纸
@@ -43,10 +43,10 @@ async def add_to_existing_sticker_set(api_id, api_hash, sticker_folder):
         print("Stickers added successfully to existing pack!")
 
 if __name__ == '__main__':
-    # Telegram API 凭据
+    # Telegram API 
     API_ID = ''  # 从 my.telegram.org 获取
     API_HASH = ''  # 从 my.telegram.org 获取
-    STICKER_FOLDER = '/root/EmojiPackage/123_telegram'  # 贴纸文件夹路径
+    STICKER_FOLDER = ''  # 贴纸文件夹路径
     
     # 运行上传程序
     asyncio.run(add_to_existing_sticker_set(API_ID, API_HASH, STICKER_FOLDER))
